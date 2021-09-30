@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: discover-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+#        cluster-name: discover-provider
+
+# endpoint 查询配置 404 todo
+management:
+  server:
+    port: 19091
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+
+server:
+  port: 18080

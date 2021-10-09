@@ -5,6 +5,6 @@
 ## universe-nacos nacos相关-配置中心、注册中心
 1. nacos-config
 2. nacos-customer
-3. nacos-discover
+3. nacos-discover 服务发现 nacos服务端
 
 ## 

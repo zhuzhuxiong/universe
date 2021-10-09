@@ -7,6 +7,7 @@ spring:
         server-addr: 127.0.0.1:8848
 #        cluster-name: discover-provider
 
+
 # endpoint 查询配置 404 todo
 management:
   server:

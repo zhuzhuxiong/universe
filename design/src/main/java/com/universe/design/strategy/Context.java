@@ -15,6 +15,8 @@ public class Context {
     //注入要用map
     @Autowired
     Map<String, AbstractStrategy> cmap =  new ConcurrentHashMap<String,AbstractStrategy>(2);
+//    @Autowired
+//    ConcurrentHashMap<String, AbstractStrategy> cmap =  new ConcurrentHashMap<String,AbstractStrategy>(2);
 
     public void strategyMethod(String dynasty){
         AbstractStrategy abstractStrategy = cmap.get(dynasty);

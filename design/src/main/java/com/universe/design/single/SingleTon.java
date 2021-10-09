@@ -1,4 +1,4 @@
-package com.universe.design;
+package com.universe.design.single;
 
 /**
  * 单例

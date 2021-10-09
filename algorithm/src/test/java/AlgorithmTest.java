@@ -1,5 +1,5 @@
 import com.universe.AlgorithmApplication;
-import com.universe.design.strategy.Context;
+import com.example.design.strategy.Context;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

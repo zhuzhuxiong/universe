@@ -24,6 +24,7 @@
     <modules>
         <module>universe-nacos</module>
         <module>algorithm</module>
+        <module>design</module>
     </modules>
 
     <dependencyManagement>

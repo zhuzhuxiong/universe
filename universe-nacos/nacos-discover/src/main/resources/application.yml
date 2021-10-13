@@ -8,20 +8,20 @@ spring:
 #        cluster-name: discover-provider
 
 
-# endpoint 查询配置 404 todo
-management:
-  server:
-    port: 19091
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-    jmx:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
+## endpoint 查询配置 404 todo
+#management:
+#  server:
+#    port: 19091
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#    jmx:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: always
 
 
 server:

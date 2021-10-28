@@ -4,7 +4,10 @@ public abstract class AbstractTemplate {
 
     public void templateMethod(){
         commonMethod();
-        abMethod();
+        hookMethod1();
+        if (hookMethod2()){
+            abMethod();
+        }
     }
 
     public void commonMethod(){
@@ -12,4 +15,13 @@ public abstract class AbstractTemplate {
     }
 
     public abstract void abMethod();
+
+    //钩子方法
+    public void hookMethod1(){
+
+    }
+
+    public boolean hookMethod2(){
+        return true;
+    }
 }

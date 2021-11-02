@@ -1,6 +1,6 @@
-package com.universe.jama;
+package com.universe.jamapar.jama;
 
-import com.universe.jama.util.Maths;
+import com.universe.jamapar.jama.util.Maths;
 
 /** Eigenvalues and eigenvectors of a real matrix. 
 <P>

@@ -1,4 +1,4 @@
-package com.universe.kalman;
+package com.universe.jamapar.kalman;
 
 public class JisuanFunction {
 

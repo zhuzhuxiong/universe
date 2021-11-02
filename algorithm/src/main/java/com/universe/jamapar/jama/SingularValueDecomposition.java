@@ -1,5 +1,5 @@
-package com.universe.jama;
-import com.universe.jama.util.*;
+package com.universe.jamapar.jama;
+import com.universe.jamapar.jama.util.*;
 
 /** Singular Value Decomposition.
    <P>

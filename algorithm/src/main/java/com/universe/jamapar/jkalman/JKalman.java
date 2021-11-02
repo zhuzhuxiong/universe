@@ -9,8 +9,8 @@
   *
   **************************************************************************** */
 
-package com.universe.jkalman;
-import com.universe.jama.Matrix;
+package com.universe.jamapar.jkalman;
+import com.universe.jamapar.jama.Matrix;
 
 /**
  * Kalman filter (state).

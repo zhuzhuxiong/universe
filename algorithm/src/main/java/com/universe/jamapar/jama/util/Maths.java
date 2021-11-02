@@ -1,4 +1,4 @@
-package com.universe.jama.util;
+package com.universe.jamapar.jama.util;
 
 public class Maths {
    /** sqrt(a^2 + b^2) without under/overflow. **/

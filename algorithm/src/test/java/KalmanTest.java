@@ -9,8 +9,8 @@
  *
  **************************************************************************** */
 
-import com.universe.jkalman.JKalman;
-import com.universe.jama.Matrix;
+import com.universe.jamapar.jkalman.JKalman;
+import com.universe.jamapar.jama.Matrix;
 import java.util.Random;
 
 /**

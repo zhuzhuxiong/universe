@@ -1,4 +1,4 @@
-package com.universe.jama;
+package com.universe.jamapar.jama;
 
    /** Cholesky Decomposition.
    <P>
@@ -36,7 +36,7 @@ public class CholeskyDecomposition implements java.io.Serializable {
  * ------------------------ */
 
    /** Cholesky algorithm for symmetric and positive definite matrix.
-   @param  A   Square, symmetric matrix.
+   @param  Arg   Square, symmetric matrix.
    @return     Structure to access L and isspd flag.
    */
 

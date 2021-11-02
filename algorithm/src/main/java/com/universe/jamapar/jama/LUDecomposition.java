@@ -1,4 +1,4 @@
-package com.universe.jama;
+package com.universe.jamapar.jama;
 
    /** LU Decomposition.
    <P>

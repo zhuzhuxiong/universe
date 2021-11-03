@@ -24,5 +24,5 @@ spring:
 #      show-details: always
 
 
-server:
-  port: 18080
+#server:
+#  port: 18080

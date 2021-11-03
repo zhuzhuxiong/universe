@@ -11,32 +11,21 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author L
+ * @author 原始消费方式、拼接URL
  */
 @Slf4j
 @RestController
 public class CustomerController {
 
-    @Bean
-    public RestTemplate restTemplate(){
+   @Autowired
+    LoadBalancerClient client;
 
-        return new RestTemplate();
-    }
-
-    @Autowired
-    RestTemplate restTemplate;
-
-    @Autowired
-    LoadBalancerClient loadBalancerClient;
-
-    @Value("${spring.application.name}")
-    private String appName;
-
-    @GetMapping("/echo/app")
-    public String echoAppName(){
-        ServiceInstance choose = loadBalancerClient.choose("discover-provider");
-        String format = String.format("http://%s:%s/echo/%s", choose.getHost(), choose.getPort(), appName);
-        log.info("echoappname--format:{}",format);
-        return restTemplate.getForObject(format, String.class);
-    }
+   @GetMapping("/customer/test")
+   public String test(){
+       ServiceInstance instance = client.choose("discover-provider");
+       RestTemplate restTemplate = new RestTemplate();
+       String url = instance.getUri()+"/echo/hello";
+       String object = restTemplate.getForObject(url, String.class);
+       return instance.getUri()+object;
+   }
 }

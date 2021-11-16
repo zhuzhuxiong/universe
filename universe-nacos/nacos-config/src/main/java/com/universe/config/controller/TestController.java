@@ -14,7 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class TestController {
 
-    @Value("${config.demo}")
+//    @Value("${config.demo}")
+//    private String title;
+
+//    @Value("${space-demo}")
+    @Value("${log.demo}")
     private String title;
 
     @GetMapping("/test")

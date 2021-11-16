@@ -1,0 +1,43 @@
+server:
+  port: 8083
+
+# 1、与dataID 环境前的name一致 alibaba-nacos-config-dev.properties
+#spring:
+#  application:
+#    name: alibaba-nacos-config
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#  profiles:
+#    active: test
+
+# group分组--动态获取配置
+#spring:
+#  application:
+#    name: alibaba-nacos-config-client
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: 127.0.0.1:8848
+#      config:
+#        group: dev
+#        server-addr: 127.0.0.1:8848
+
+# namespace方式多环境配置
+#spring:
+#  application:
+#    name: spring-config-nacos-client
+#  cloud:
+#    nacos:
+#      config:
+#        namespace: df029366-f555-4607-85f4-6643934b6e77
+# nacos 多配置文件
+spring:
+  application:
+    name: alibaba-nacos-config
+  cloud:
+    nacos:
+      config:
+        extension-configs: log.properties
+        refresh-enabled: true

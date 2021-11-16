@@ -5,7 +5,13 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-#        cluster-name: discover-provider
+#  datasource:
+#    platform: mysql
+#    url: jdbc:mysql://42.193.124.125:3306/test?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+#    username: username
+#    password: password
+  #        cluster-name: discover-provider
+#  db.num=1
 
 
 ## endpoint 查询配置 404 todo

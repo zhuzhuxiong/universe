@@ -26,6 +26,7 @@
         <module>algorithm</module>
         <module>design</module>
         <module>vertx</module>
+        <module>schedule</module>
     </modules>
 
     <dependencyManagement>
@@ -72,6 +73,11 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+            <version>9.6.0</version>
         </dependency>
     </dependencies>
 

@@ -13,6 +13,8 @@
 ### 顺序消费消息 -- com.universe.rocket.order.Consumer
 
 ## 延时消息
+### 延时生产者：com.universe.rocket.schedule.ScheduleProducer -- setDelayTimeLevel();
+### 延时消费者：com.universe.rocket.schedule.ScheduleConsumer
 
 ## 批量消息
 

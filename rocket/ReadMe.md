@@ -9,8 +9,8 @@
 ### 消息消费-SimpleConsumer
 
 ## 顺序消息
-### 顺序生产消息
-### 顺序消费消息
+### 顺序生产消息 -- com.universe.rocket.order.Producer
+### 顺序消费消息 -- com.universe.rocket.order.Consumer
 
 ## 延时消息
 

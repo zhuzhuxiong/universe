@@ -17,10 +17,15 @@
 ### 延时消费者：com.universe.rocket.schedule.ScheduleConsumer
 
 ## 批量消息
+### 生产者 -- com.universe.rocket.batch.Producer
+### 消息分割 -- com.universe.rocket.batch.ListSplitter
 
 ## 过滤消息
 
 ## 消息事务
+### 生产者--com.universe.rocket.transaction.Producer
+### 事务监听--com.universe.rocket.transaction.TransactionListenerImpl
+
 
 ## logappender
 

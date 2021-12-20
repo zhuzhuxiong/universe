@@ -27,6 +27,11 @@
 ### 事务监听--com.universe.rocket.transaction.TransactionListenerImpl
 
 
-## logappender
+## logappender --skip
+
+## OpenMessaging
+### OMS Producer
+### OMS Pull Consumer
+### OMS Push Consumer
 
  

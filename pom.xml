@@ -19,14 +19,21 @@
     <properties>
         <java.version>1.8</java.version>
         <boot.version>2.5.4</boot.version>
+        <lombok.version>1.18.20</lombok.version>
+        <slf4j.version>9.6.0</slf4j.version>
     </properties>
 
     <modules>
         <module>universe-nacos</module>
-        <module>algorithm</module>
-        <module>design</module>
-        <module>vertx</module>
-        <module>schedule</module>
+        <module>uni-algorithm</module>
+        <module>uni-design</module>
+        <module>uni-vertx</module>
+        <module>uni-juc</module>
+        <module>uni-mybatis</module>
+        <module>uni-netty</module>
+        <module>uni-rabbin</module>
+        <module>uni-rocket</module>
+        <module>uni-schedule</module>
     </modules>
 
     <dependencyManagement>
@@ -72,12 +79,12 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok.version}</version>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-slf4j</artifactId>
-            <version>9.6.0</version>
+            <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
 

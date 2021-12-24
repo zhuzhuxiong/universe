@@ -10,11 +10,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>algorithm</artifactId>
+
+    <properties>
+        <spring-web-version>5.1.4.RELEASE</spring-web-version>
+        <kalman-version>1.0.3</kalman-version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.1.4.RELEASE</version>
+            <version>${spring-web-version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -25,33 +33,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.renjin.cran/Matrix -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.renjin.cran</groupId>-->
-        <!--            <artifactId>Matrix</artifactId>-->
-
-        <!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/hu.kazocsaba.math/matrix -->
-<!--        <dependency>-->
-<!--            <groupId>hu.kazocsaba.math</groupId>-->
-<!--            <artifactId>matrix</artifactId>-->
-<!--            <version>1.2.1</version>-->
-<!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/gov.nist.math/jama -->
+        <!-- kalman 滤波 -->
         <dependency>
             <groupId>gov.nist.math</groupId>
             <artifactId>jama</artifactId>
-            <version>1.0.3</version>
+            <version>${kalman-version}</version>
         </dependency>
-
-
-
     </dependencies>
-
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
 </project>

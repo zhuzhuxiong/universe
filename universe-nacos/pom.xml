@@ -7,9 +7,9 @@
         <groupId>com.lee</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
     <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>universe-nacos</artifactId>
 
     <modules>
@@ -21,6 +21,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <actuator.version>2.5.1</actuator.version>
     </properties>
 
     <dependencies>
@@ -36,9 +37,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>2.5.1</version>
+            <version>${actuator.version}</version>
         </dependency>
     </dependencies>
-
-
 </project>

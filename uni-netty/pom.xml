@@ -7,23 +7,21 @@
         <groupId>com.lee</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <groupId>com.universe</groupId>
-    <artifactId>rocket</artifactId>
+    <artifactId>uni-netty</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rocket</name>
-    <description>rocket</description>
+    <name>uni-netty</name>
+    <description>uni-netty</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <rocker.version>4.9.1</rocker.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -33,12 +31,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <!-- rocket mq -->
-        <dependency>
-            <groupId>org.apache.rocketmq</groupId>
-            <artifactId>rocketmq-client</artifactId>
-            <version>${rocker.version}</version>
         </dependency>
     </dependencies>
 

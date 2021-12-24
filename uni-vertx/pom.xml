@@ -17,6 +17,11 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <vertx-core.version>4.1.2</vertx-core.version>
+        <vertx-web.version>4.1.2</vertx-web.version>
+        <netty.version>2.0.34.Final</netty.version>
+        <vertx-hazelcast.version>4.1.2</vertx-hazelcast.version>
+        <lang3.version>3.4</lang3.version>
     </properties>
 
     <dependencies>
@@ -28,44 +33,35 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-<!--        <dependency>-->
-<!--            <groupId>org.springframework</groupId>-->
-<!--            <artifactId>spring-web</artifactId>-->
-<!--            <version>5.1.4.RELEASE</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-core</artifactId>
-            <version>4.1.2</version>
+            <version>${vertx-core.version}</version>
         </dependency>
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-web</artifactId>
-            <version>4.1.2</version>
+            <version>${vertx-web.version}</version>
         </dependency>
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-tcnative-boringssl-static</artifactId>
-            <version>2.0.34.Final</version>
+            <version>${netty.version}</version>
         </dependency>
-
         <dependency>
             <groupId>io.vertx</groupId>
             <artifactId>vertx-hazelcast</artifactId>
-            <version>4.1.2</version>
+            <version>${vertx-hazelcast.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>3.4</version>
+            <version>${lang3.version}</version>
         </dependency>
     </dependencies>
 

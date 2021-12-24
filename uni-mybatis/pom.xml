@@ -3,82 +3,83 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.1</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-build</artifactId>
+        <version>2.3.1.RELEASE</version>
+        <relativePath/>
     </parent>
+
     <groupId>com.universe</groupId>
     <artifactId>mybatis</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mybatis</name>
     <description>mybatis</description>
+
     <properties>
         <java.version>1.8</java.version>
+        <mybatis.version>3.5.8</mybatis.version>
+        <mp-boot.version>3.4.3.4</mp-boot.version>
+        <mariadb.version>3.0.0-alpha</mariadb.version>
+        <mp-generator.version>3.5.1</mp-generator.version>
+        <swagger.version>2.1.2</swagger.version>
+        <spring.version>5.3.10</spring.version>
+        <swagger-annotations.version>1.5.21</swagger-annotations.version>
+        <swagger-i.version>2.1.2</swagger-i.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.8</version>
+            <version>${mybatis.version}</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.4.3.4</version>
+            <version>${mp-boot.version}</version>
         </dependency>
+        <!-- 数据库 -->
         <dependency>
             <groupId>org.mariadb.jdbc</groupId>
             <artifactId>mariadb-java-client</artifactId>
-            <version>3.0.0-alpha</version>
+            <version>${mariadb.version}</version>
         </dependency>
-        <!-- lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
-        </dependency>
+        <!-- mp 自动生成代码 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.5.1</version>
+            <version>${mp-generator.version}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.velocity/velocity-engine-core -->
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity-engine-core</artifactId>
-            <version>2.3</version>
-        </dependency>
+        <!-- API 文档工具-swagger -->
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-jaxrs2</artifactId>
-            <version>2.1.2</version>
+            <version>${swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>io.swagger.core.v3</groupId>
             <artifactId>swagger-jaxrs2-servlet-initializer-v2</artifactId>
-            <version>2.1.2</version>
+            <version>${swagger-i.version}</version>
         </dependency>
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.5.21</version>
+            <version>${swagger-annotations.version}</version>
         </dependency>
+        <!-- -end- -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>5.3.10</version>
+            <version>${spring.version}</version>
         </dependency>
     </dependencies>
 

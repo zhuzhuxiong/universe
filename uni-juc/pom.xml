@@ -9,15 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.example</groupId>
-    <artifactId>design</artifactId>
+    <groupId>com.universe</groupId>
+    <artifactId>juc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>design</name>
-    <description>design</description>
+    <name>juc</name>
+    <description>juc</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <cglib.version>3.3.0</cglib.version>
     </properties>
 
     <dependencies>
@@ -30,13 +29,11 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--cglib-->
-        <dependency>
-            <groupId>cglib</groupId>
-            <artifactId>cglib-nodep</artifactId>
-            <version>${cglib.version}</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.18.20</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

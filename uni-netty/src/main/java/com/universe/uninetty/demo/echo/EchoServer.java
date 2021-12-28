@@ -51,7 +51,7 @@ public class EchoServer {
                             if (sslContext != null){
                                 pipeline.addLast(sslContext.newHandler(ch.alloc()));
                             }
-                            pipeline.addLast(new NettyEchoHandler());
+                            pipeline.addLast(new EchoServerHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG,128)

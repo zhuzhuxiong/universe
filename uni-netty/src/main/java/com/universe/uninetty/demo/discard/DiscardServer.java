@@ -7,44 +7,41 @@ import io.netty.channel.ChannelOption;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
-import io.netty.handler.ssl.util.SelfSignedCertificate;
 
 import javax.net.ssl.SSLException;
 import java.security.cert.CertificateException;
 
 /**
  * discard server demo
- * demo内容来自官网，注释部分为主
+ * demo内容来自官网，应该是需要client 及 clientHandler 的
  */
 public class DiscardServer {
 
-    static final boolean SSL = System.getProperty("ssl") != null;
-    static final int port = Integer.parseInt(System.getProperty("port","8080"));
+//    static final boolean SSL = System.getProperty("ssl") != null;
+//    static final int port = Integer.parseInt(System.getProperty("port","8080"));
 
-//    private int port;
+    private int port;
 
-//    public DiscardServer(int port) {
-//        this.port = port;
-//    }
+    public DiscardServer(int port) {
+        this.port = port;
+    }
 
     public static void main(String[] args) throws CertificateException, SSLException {
-//        int port = 8080;
-//        if (args.length > 0){
-//            port = Integer.parseInt(args[0]);
-//        }
-//        new DiscardServer(port).run();
-        //次要 ssl
-        final SslContext sslContext;
-        if (SSL) {
-            SelfSignedCertificate certificate = new SelfSignedCertificate();
-            sslContext = SslContextBuilder.forServer(certificate.certificate(),certificate.privateKey()).build();
-        }else {
-            sslContext = null;
+        int port = 8080;
+        if (args.length > 0){
+            port = Integer.parseInt(args[0]);
         }
-
-        new DiscardServer().run();
+        new DiscardServer(port).run();
+        //次要 ssl
+//        final SslContext sslContext;
+//        if (SSL) {
+//            SelfSignedCertificate certificate = new SelfSignedCertificate();
+//            sslContext = SslContextBuilder.forServer(certificate.certificate(),certificate.privateKey()).build();
+//        }else {
+//            sslContext = null;
+//        }
+//
+//        new DiscardServer().run();
     }
 
     /**

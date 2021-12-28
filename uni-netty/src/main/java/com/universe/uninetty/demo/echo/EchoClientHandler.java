@@ -1,15 +1,28 @@
 package com.universe.uninetty.demo.echo;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
-public class NettyEchoHandler extends ChannelInboundHandlerAdapter {
+public class EchoClientHandler extends ChannelInboundHandlerAdapter {
+
+    final ByteBuf message;
+
+    public EchoClientHandler() {
+        message = Unpooled.buffer(EchoClient.SIZE);
+        for (int i = 0; i < message.capacity(); i++) {
+            message.writeByte((byte)i);
+        }
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        ctx.writeAndFlush(message);
+    }
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        log.info("ctx:{},msg:{}", ctx, msg);
         ctx.write(msg);
     }
 

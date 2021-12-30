@@ -1,4 +1,4 @@
-package com.universe.uninetty.demo.time;
+package com.universe.uninetty.demo.fundamental.time.pojo;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -9,20 +9,13 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 /**
- * serverBootStrap:必须设置的是 childHandler
+ * pojo 代替 bytebuf
  */
-public class TimeServer {
-
-    final static int PORT = Integer.parseInt(System.getProperty("port","8080"));
+public class TimePoJoServer {
 
     public static void main(String[] args) {
-        new TimeServer().run();
-    }
-
-    public void run(){
         NioEventLoopGroup bossGroup = new NioEventLoopGroup();
         NioEventLoopGroup workGroup = new NioEventLoopGroup();
-
         try {
             ServerBootstrap bootstrap = new ServerBootstrap();
             bootstrap.group(bossGroup,workGroup)
@@ -30,12 +23,12 @@ public class TimeServer {
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline().addLast(new TimeServerHandler());
+                            ch.pipeline().addLast(new TimePojoEncoder(),new TimePojoServerHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG,128)
                     .childOption(ChannelOption.SO_KEEPALIVE,true);
-            ChannelFuture future = bootstrap.bind(PORT).sync();
+            ChannelFuture future = bootstrap.bind(8080).sync();
             future.channel().closeFuture().sync();
         }catch (Exception e){
             e.printStackTrace();
@@ -44,4 +37,5 @@ public class TimeServer {
             workGroup.shutdownGracefully();
         }
     }
+
 }

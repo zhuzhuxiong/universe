@@ -1,4 +1,4 @@
-package com.universe.uninetty.demo.echo;
+package com.universe.uninetty.demo.fundamental.echo;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;

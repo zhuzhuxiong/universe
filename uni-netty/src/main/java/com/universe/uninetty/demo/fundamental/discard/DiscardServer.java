@@ -1,4 +1,4 @@
-package com.universe.uninetty.demo.discard;
+package com.universe.uninetty.demo.fundamental.discard;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

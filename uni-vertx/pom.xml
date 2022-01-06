@@ -3,10 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>universe-nacos</artifactId>
         <groupId>com.lee</groupId>
+        <artifactId>universe</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
     <groupId>com.universe</groupId>
@@ -17,10 +16,11 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <vertx-core.version>4.1.2</vertx-core.version>
-        <vertx-web.version>4.1.2</vertx-web.version>
+        <!--4.2.3 -->
+        <vertx-core.version>4.2.3</vertx-core.version>
+        <vertx-web.version>4.2.3</vertx-web.version>
         <netty.version>2.0.34.Final</netty.version>
-        <vertx-hazelcast.version>4.1.2</vertx-hazelcast.version>
+        <vertx-hazelcast.version>4.2.3</vertx-hazelcast.version>
         <lang3.version>3.4</lang3.version>
     </properties>
 

@@ -17,10 +17,10 @@
     <properties>
         <java.version>1.8</java.version>
         <!--4.2.3 -->
-        <vertx-core.version>4.2.3</vertx-core.version>
+        <vertx-core.version>4.2.0</vertx-core.version>
         <vertx-web.version>4.2.3</vertx-web.version>
         <netty.version>2.0.34.Final</netty.version>
-        <vertx-hazelcast.version>4.2.3</vertx-hazelcast.version>
+        <vertx-hazelcast.version>4.2.0</vertx-hazelcast.version>
         <lang3.version>3.4</lang3.version>
     </properties>
 
@@ -43,21 +43,21 @@
             <artifactId>vertx-core</artifactId>
             <version>${vertx-core.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-web</artifactId>
-            <version>${vertx-web.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.vertx</groupId>-->
+<!--            <artifactId>vertx-web</artifactId>-->
+<!--            <version>${vertx-web.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-tcnative-boringssl-static</artifactId>
             <version>${netty.version}</version>
         </dependency>
-        <dependency>
-            <groupId>io.vertx</groupId>
-            <artifactId>vertx-hazelcast</artifactId>
-            <version>${vertx-hazelcast.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.vertx</groupId>-->
+<!--            <artifactId>vertx-hazelcast</artifactId>-->
+<!--            <version>${vertx-hazelcast.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>

@@ -51,9 +51,12 @@ public class LeeCode14 {
         for (int i = 0; i < length; i++) {
             char c = strs[0].charAt(i);
             for (int j = 1; j < strsLength; j++) {
-//                if ()
+                if (i == strs[j].length() || c != strs[j].charAt(i)){
+                    return strs[0].substring(0,i);
+                }
 
             }
         }
+        return strs[0];
     }
 }

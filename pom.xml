@@ -34,6 +34,7 @@
         <module>uni-rabbin</module>
         <module>uni-rocket</module>
         <module>uni-schedule</module>
+        <module>uni-shiro</module>
     </modules>
 
     <dependencyManagement>

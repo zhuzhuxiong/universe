@@ -1,5 +1,6 @@
 package com.universe.unishiro.first.realm;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
@@ -18,6 +19,7 @@ import java.util.Set;
 /**
  * @author
  */
+@Slf4j
 public class MyRealm extends AuthorizingRealm {
 
     Map<String, String> userMap = new HashMap<String, String>();

@@ -35,6 +35,7 @@
         <module>uni-rocket</module>
         <module>uni-schedule</module>
         <module>uni-shiro</module>
+        <module>uni-springSecurity</module>
     </modules>
 
     <dependencyManagement>

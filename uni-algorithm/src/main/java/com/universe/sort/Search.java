@@ -1,4 +1,4 @@
-package com.universe.search.model1;
+package com.universe.sort;
 
 public class Search {
 

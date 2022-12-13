@@ -2,6 +2,13 @@
 # 项目结构
 
 ## uni-algorithm--数据结构、算法
+1. array 数组
+2. fibonacci 费内巴切
+3. linked 链表
+4. number 数字
+5. sort 排序
+6. stream 流处理
+7. structure 数据结构demo
 ## uni-design--设计模式
 ## uni-juc--JAVA JUC 
 ## uni-mybatis--mybatis-plus

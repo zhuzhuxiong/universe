@@ -12,7 +12,7 @@
 ## uni-design--设计模式
 
 ## uni-juc--JAVA JUC 
-## uni-mybatis--mybatis-plus
+## uni-mybatis--mybatis-plus app启动异常
 ## uni-rabbin--还没有
 ## uni-rocket--MQ
 ## uni-schedule--quartz

@@ -68,11 +68,11 @@
             <artifactId>feign-slf4j</artifactId>
             <version>9.6.0</version>
         </dependency>
-        <dependency>
-            <groupId>org.jfaster.derror</groupId>
-            <artifactId>derror-logback-plugin</artifactId>
-            <version>1.0.7</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.jfaster.derror</groupId>-->
+<!--            <artifactId>derror-logback-plugin</artifactId>-->
+<!--            <version>1.0.7</version>-->
+<!--        </dependency>-->
     </dependencies>
 
     <build>

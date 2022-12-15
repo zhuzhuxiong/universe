@@ -16,6 +16,7 @@
 ###4、 uni-mybatis（ing）
 1. mybatis-plus 自动反向生成代码
 2. mp 动态数据源配置
+3. spring 多数据源配置
 ###5、 uni-rabbin--还没有
 ###6、 uni-rocket--MQ
 ###7、 uni-schedule--quartz

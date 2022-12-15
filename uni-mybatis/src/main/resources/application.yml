@@ -1,0 +1,17 @@
+# mp ??????
+spring:
+  datasource:
+    dynamic:
+      primary: master # ???????
+      strict: false # ????????????FALSE???????????true?????????
+      datasource:
+        master:
+          url: jdbc:mariadb://42.193.124.125:3306/test
+          username: username
+          password: password
+          driver-class-name: org.mariadb.jdbc.Driver
+        slave:
+          url: jdbc:mariadb://42.193.124.125:3306/test
+          username: username
+          password: password
+          driver-class-name: org.mariadb.jdbc.Driver

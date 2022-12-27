@@ -1,6 +1,7 @@
 package com.universe.spring.controller;
 
 import com.sun.istack.internal.NotNull;
+import com.universe.spring.annocation.EchoAnno;
 import com.universe.spring.exception.BizException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class LoginController {
      * @param param
      * @return
      */
+    @EchoAnno("hello")
     @RequestMapping("/log/test")
     public String echoString(LogParam param){
         if (0 == param.getCode()){

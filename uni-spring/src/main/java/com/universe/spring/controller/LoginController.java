@@ -1,8 +1,10 @@
 package com.universe.spring.controller;
 
-import com.sun.istack.internal.NotNull;
+import com.starter.entity.StudentDemo;
+import com.starter.service.Service;
 import com.universe.spring.annocation.EchoAnno;
 import com.universe.spring.exception.BizException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,12 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class LoginController {
 
+    @Autowired
+    Service service;
+
     /**
      * 全局业务异常处理测试
      * @param param
      * @return
      */
-    @EchoAnno("hello")
     @RequestMapping("/log/test")
     public String echoString(LogParam param){
         if (0 == param.getCode()){
@@ -29,5 +33,15 @@ public class LoginController {
         }else {
             return "gogo";
         }
+    }
+
+    @RequestMapping("/log/starter")
+    public String myStarter(){
+        StudentDemo demo = new StudentDemo();
+        demo.setName("阿笨笨");
+        demo.setId(1);
+        service.setStudent(demo);
+        service.echoMessage();
+        return "gogogogogo";
     }
 }

@@ -40,22 +40,21 @@ public class AspectDemo {
 //    @Pointcut(value = "execution(public * *(..))")
     private void pointCut() {
     }
-
-    @Before(value = "pointCut()")
-    public void beforePoint() {
-        log.info("beforePoint:切点前");
-    }
-
-    @After(value = "pointCut()")
-    public void afterPoint() {
-        log.info("afterPoint:切点后");
-    }
-
-    @Around(value = "pointCut()")
-    public Object aroundPoint(ProceedingJoinPoint pjp){
-        log.info("aroundPoint:包围你");
-        return null;
-    }
+//
+//    @Before(value = "pointCut()")
+//    public void beforePoint() {
+//        log.info("beforePoint:切点前");
+//    }
+//
+//    @After(value = "pointCut()")
+//    public void afterPoint() {
+//        log.info("afterPoint:切点后");
+//    }
+//
+//    @Around(value = "pointCut()")
+//    public void aroundPoint(ProceedingJoinPoint pjp){
+//        log.info("aroundPoint:包围你");
+//    }
 
 
 }

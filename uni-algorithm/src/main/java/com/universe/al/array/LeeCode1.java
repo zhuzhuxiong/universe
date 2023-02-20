@@ -3,12 +3,20 @@ package com.universe.al.array;
 import java.util.HashMap;
 
 /**
- * 两数之和
+ * 两数之和 (两个数不可重复)
  * 返回[0,1]形式下标
+ * 1、双循环 内循环条件 j=i+1
+ * 2、利用map （k-v 分别代表的含义） 单循环 map.containsKey(target-nums[i])
  * @author lx
  */
 public class LeeCode1 {
 
+    /**
+     * 双循环 j=i+1;
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] solution1(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {
             for (int j = i+1; j < nums.length; j++) {
@@ -39,7 +47,4 @@ public class LeeCode1 {
         }
         return new int[0];
     }
-
-
-
 }

@@ -24,6 +24,7 @@ public class LeeCode13 {
 
         int length = s.length();
         int num = 0;
+        //找规律，左减右加
         for (int i = 0; i < length; i++) {
             Integer pre = map.get(s.charAt(i));
             if (i < length -1 && pre < map.get(s.charAt(i + 1))){

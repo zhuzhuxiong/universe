@@ -22,10 +22,12 @@ public class LeeCode20 {
     }
 
     public boolean solution(String s){
+        //s长度不为偶数返回false
         int length = s.length();
         if (length % 2 == 1){
             return false;
         }
+        //定义判断规则 **右括号为key**
         HashMap<Character, Character> map = new HashMap<>();
         map.put(')','(');
         map.put(']','[');
@@ -33,12 +35,17 @@ public class LeeCode20 {
 
         LinkedList<Character> list = new LinkedList<>();
         for (int i = 0; i < length; i++) {
+            //s包含括号
             if (map.containsKey(s.charAt(i))){
+
+                //对不上 或者为空 不符合
                 if (list.isEmpty() || (!Objects.equals(list.peek(), map.get(s.charAt(i))))){
                     return false;
                 }
+                //遇到右括号弹出来
                 list.pop();
             }else {
+                //左括号放进去
                 list.push(s.charAt(i));
             }
         }

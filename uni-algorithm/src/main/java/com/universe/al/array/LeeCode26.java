@@ -1,7 +1,8 @@
 package com.universe.al.array;
 
 /**
- * @author
+ * 26. 删除有序数组中的重复项（不能开辟新的空间）
+ * @author l
  */
 public class LeeCode26 {
 
@@ -13,8 +14,8 @@ public class LeeCode26 {
      * 双指针： 一 fast 一 slow；
      * fast做循环；slow做收集；
      *
-     * 循环条件：not for for for；
-     * while（）：left < right; fast < lenth;
+     * 循环 fast++；
+     * 符合条件 slow++ 计数收集；
      *
      * @param nums
      * @return
@@ -34,4 +35,5 @@ public class LeeCode26 {
         }
         return slow;
     }
+
 }

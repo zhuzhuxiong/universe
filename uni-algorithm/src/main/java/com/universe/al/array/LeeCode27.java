@@ -1,7 +1,10 @@
 package com.universe.al.array;
 
 /**
- * @author
+ * 给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素
+ * ，并返回移除后数组的新长度。
+ * 雷同L26 指针的起始条件不同
+ * @author l
  */
 public class LeeCode27 {
 
@@ -10,12 +13,7 @@ public class LeeCode27 {
     }
 
     /**
-     * 双指针： 一 fast 一 slow；
-     * fast做循环；slow做收集；
-     *
-     * 循环条件：not for for for；
-     * while（）：left < right; fast < lenth;
-     *
+     * 双指针
      * @param nums
      * @return
      */

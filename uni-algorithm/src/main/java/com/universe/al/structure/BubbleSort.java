@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 /**
  * 0913-咕嘟
+ * @author l
  */
 public class BubbleSort {
 
@@ -30,7 +31,7 @@ public class BubbleSort {
             for (int j = 0; j < length - i - 1; j++) {
                 if (nums[j] > nums[j + 1]){
                     int temp = nums[j];
-                    nums[j] = nums[j+1];
+                    nums[ j] = nums[j+1];
                     nums[j+1] = temp;
                 }
             }

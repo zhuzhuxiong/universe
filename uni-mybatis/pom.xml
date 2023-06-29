@@ -57,6 +57,17 @@
             <artifactId>mybatis</artifactId>
             <version>${mybatis.version}</version>
         </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+        <!-- 数据库 云服务安装的是mariadb 库 -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>${mariadb.version}</version>
+        </dependency>
 
         <!-- mybatis-plus-boot 依赖 -->
         <dependency>
@@ -83,12 +94,7 @@
             <version>3.3.1</version>
         </dependency>
 
-        <!-- 数据库 云服务安装的是mariadb 库 -->
-        <dependency>
-            <groupId>org.mariadb.jdbc</groupId>
-            <artifactId>mariadb-java-client</artifactId>
-            <version>${mariadb.version}</version>
-        </dependency>
+
 
         <!-- API 文档工具-swagger -->
         <dependency>

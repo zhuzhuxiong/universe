@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--    &lt;!&ndash; 外部配置引入 resource：类路径引入，url:磁盘，网络路径&ndash;&gt;-->
+<!--    <properties resource="xx.properties"></properties>-->
+
+    <!-- mybatis 运行时行为；下为 映射名称是否驼峰-->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 为实体类起别名 -->
+    <typeAliases>
+        <typeAlias type="com.universe.mybatis.entity.User" alias="user"/>
+        <!-- 批量？-->
+<!--        <package name="com.universe.mybatis.entity"/>-->
+    </typeAliases>
+    
+    <!-- 环境配置 -->
+    <environments default="dev">
+        <environment id="dev">
+            <transactionManager type="JDBC"/>
+            <dataSource type="pooled">
+                <!-- ${username}-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mariadb://42.193.124.125:3306/test"/>
+                <property name="username" value="username"/>
+                <property name="password" value="password"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 配置数据库，区分SQL在那种数据库里执行-->
+<!--    <databaseIdProvider type="DB-VENDOR">-->
+<!--        <property name="MySql" value="mysql"/>-->
+<!--    </databaseIdProvider>-->
+
+    <!--映射具体的mapper-->
+    <mappers>
+        <mapper resource="mapper/UserMapper.xml"/>
+<!--        <mapper class="com.universe.mybatis.mapper.UserMapper"/>-->
+    </mappers>
+</configuration>

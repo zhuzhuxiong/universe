@@ -2,4 +2,41 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.universe.mybatis.mapper.UserMapper">
 
+    <select id="selectById" resultType="com.universe.mybatis.entity.User">
+        select * from user where id=#{id}
+    </select>
+
+    <!--    User selectUser(String name, Integer age);-->
+    <select id="selectUser" resultType="com.universe.mybatis.entity.User">
+        select * from user where name =#{name} and age = #{param2}
+    </select>
+
+<!--    User selectUser1(@Param("eman") String name, Integer age);-->
+    <select id="selectUser1" resultType="com.universe.mybatis.entity.User">
+        select * from user where name =#{eman} and age = #{param2}
+    </select>
+
+<!--    User selectUser2(User user);-->
+    <select id="selectUser2" resultType="com.universe.mybatis.entity.User">
+        select * from user where name =#{name} and age = #{age}
+    </select>
+
+<!--    User selectUser3(Integer id, User user);-->
+    <select id="selectUser3" resultType="com.universe.mybatis.entity.User">
+        select * from user where id =#{id} and age = #{user.age}
+    </select>
+
+    <!--List<User> selectList();-->
+    <select id="selectList" resultType="com.universe.mybatis.entity.User">
+        select * from user
+    </select>
+
+    <!--    User selectUser4(Map map);-->
+    <select id="selectUser4" resultType="com.universe.mybatis.entity.User">
+        select * from user where name =#{name} and age = #{age}
+    </select>
+
+
+
+
 </mapper>

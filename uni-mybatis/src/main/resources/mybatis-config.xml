@@ -18,6 +18,12 @@
         <!-- 批量？-->
 <!--        <package name="com.universe.mybatis.entity"/>-->
     </typeAliases>
+
+<!--    <plugins>-->
+<!--        <plugin interceptor="com.github.pagehelper.PageHelper">-->
+<!--            <property name="offsetAsPageNum" value="true"/>-->
+<!--        </plugin>-->
+<!--    </plugins>-->
     
     <!-- 环境配置 -->
     <environments default="dev">
@@ -38,9 +44,12 @@
 <!--        <property name="MySql" value="mysql"/>-->
 <!--    </databaseIdProvider>-->
 
+
+
     <!--映射具体的mapper-->
     <mappers>
         <mapper resource="mapper/UserMapper.xml"/>
 <!--        <mapper class="com.universe.mybatis.mapper.UserMapper"/>-->
     </mappers>
+
 </configuration>

@@ -32,7 +32,7 @@ public interface UserMapper {
 
     User selectUser3(Integer id, User user);
 
-    List<User> selectList();
+    List<User> selectList(Integer pageNum, Integer pageSize);
 
     User selectUser4(Map map);
 

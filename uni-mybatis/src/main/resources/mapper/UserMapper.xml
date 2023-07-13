@@ -28,7 +28,7 @@
 
     <!--List<User> selectList();-->
     <select id="selectList" resultType="com.universe.mybatis.entity.User">
-        select * from user
+        select * from user limit #{pageNum},#{pageSize}
     </select>
 
     <!--    User selectUser4(Map map);-->

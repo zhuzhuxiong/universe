@@ -5,6 +5,7 @@ package com.universe.design.adapter;
  * 1、target-目标接口，业务需要的接口
  * 2、adapter--适配器
  * 3、adaptee--适配者，包含需要被使用的功能
+ * @author l
  */
 public class AdapterClient {
 

@@ -2,6 +2,9 @@ package com.universe.design.iterator;
 
 import java.util.List;
 
+/**
+ * @author l
+ */
 public class ConcreteIterator implements Iterator{
     private List<Object> list = null;
     private int inedx = -1;

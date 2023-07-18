@@ -3,6 +3,9 @@ package com.universe.design.iterator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author l
+ */
 public class ConcreteAggregate implements Aggregate{
     private List<Object> list = new ArrayList<>();
 

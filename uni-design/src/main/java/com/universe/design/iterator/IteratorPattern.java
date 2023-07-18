@@ -3,6 +3,7 @@ package com.universe.design.iterator;
 /**
  * 迭代器模式--参考Java iterator
  *
+ * @author l
  */
 public class IteratorPattern {
     public static void main(String[] args) {

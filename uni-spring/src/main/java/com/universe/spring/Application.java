@@ -3,6 +3,7 @@ package com.universe.spring;
 import com.universe.spring.interceptor.LoginInterceptor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -11,6 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @author lx
  */
 @SpringBootApplication
+@EnableTransactionManagement
 public class Application implements WebMvcConfigurer {
 
     public static void main(String[] args) {

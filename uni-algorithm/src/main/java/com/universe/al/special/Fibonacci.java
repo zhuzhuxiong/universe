@@ -1,4 +1,4 @@
-package com.universe.al.fibonacci;
+package com.universe.al.special;
 
 
 /**

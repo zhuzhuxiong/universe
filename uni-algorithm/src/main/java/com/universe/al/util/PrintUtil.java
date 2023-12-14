@@ -7,6 +7,11 @@ import java.util.List;
  */
 public class PrintUtil {
 
+    /**
+     * 打印矩阵
+     * @param matrix
+     * @param <T>
+     */
     public static <T> void printMatrix(List<List<T>> matrix) {
         System.out.println("[");
         for (List<T> row : matrix) {
@@ -14,4 +19,6 @@ public class PrintUtil {
         }
         System.out.println("]");
     }
+
+
 }
